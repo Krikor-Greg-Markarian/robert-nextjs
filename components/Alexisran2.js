@@ -1,25 +1,13 @@
 import React from 'react'
 
-function Alexisran(props) {
+function Alexisran2(props) {
     return (
-        <div className = "pt-20 border-b-2 container mx-auto pb-20">
-            <div className = "container mx-auto">
-                <div className = "grid grid-cols-2">
-                    <div className = "col-span-1">
-                        <div className = "alexisran rounded-full "></div>
-                        
-                       
-                    </div>
+        <div>
+        <div className = "font-bold inline">{props.name2} Alexis Ran <p className = "text-gray-500 text-sm pl-4 inline">March 15, 2016  </p> <span className = "text-gray-500 text-sm float-right">REPLY</span> </div>
+        <div className = "text-gray-500 pt-5 text-sm">{props.position2}Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin. Lorem quisma bibendum ctor, nisi. elitas consequat ipsum nec sagittis sem nibh id elit. Duis sed odios sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio ticidut.</div>
 
-                    <div>
-                    <div className = "font-bold">{props.name} {props.name2}March 15,2016</div>
-                    <div className = "text-gray-500 pt-5 text-sm">{props.position} {props.position2}</div>
-
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
 
-export default Alexisran
+export default Alexisran2
