@@ -4,15 +4,21 @@ import Backgroundimage from "../components/Backgroundimage";
 import Smallbox from "../components/Smallbox";
 import Textleftpic from "../components/Textleftpic";
 import { FaFacebook, FaInstagram, FaTwitter,FaMailBulk,FaMapMarker } from "react-icons/fa";
+import Alexisran from "../components/Alexisran";
 
 const object = {
   data: [
     {
       title:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo repellendus, quasi tenetur ipsam debitis tempora, numquam saepe autem, veniam vero sint? Quaerat accusantium iure quibusdam veniam voluptatem modi quod.",
+
+        name: "Alexis Ran",
+        position: "Many desktop publishing and web page editors now use lorem ipsum as their default model text, andaw search to lorem ipsum will uncover many web sites stilin. Their infancy. Various versions have envolved over."
     },
   ],
 };
+
+
 
 
 
@@ -53,6 +59,16 @@ export default function Home() {
       </div>
      
       </div>
+      </section>
+
+
+
+      <section>
+     
+      {object.data.map((item, idx) => (
+          <Alexisran key={idx} name={item.name} position={item.position}/>
+        ))}
+       
       </section>
     </div>
   );
