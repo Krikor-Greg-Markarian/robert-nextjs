@@ -19,6 +19,21 @@ body{
 }
 
 
+
+.hikingimage2{
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+}
+
+
+
+
+
+
 .image{
   background-image: url("https://cdn.pixabay.com/photo/2015/12/08/00/34/men-1081843__340.jpg");
   background-position: center;
