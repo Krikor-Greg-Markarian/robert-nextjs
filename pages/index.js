@@ -119,10 +119,10 @@ export default function Home() {
 
             <div className="">
               <div className="pt-20 border-b-2  container mx-auto pb-20">
-                <div className="container mx-auto">
+                <div className="container mx-auto p-20">
                   <div className="grid grid-cols-2 ">
                     <div className="col-span-1">
-                      <div className="p-20 ">
+                      <div className=" p-20 ">
                         <div className="alexisran rounded-full "></div>
                       </div>
                     </div>
@@ -134,9 +134,10 @@ export default function Home() {
                         <p className="text-gray-500 text-sm pl-4 inline">
                           March 15, 2016{" "}
                         </p>{" "}
-                        <span className="text-gray-500 text-sm float-right">
+                        <span className="text-gray-500 text-sm float-right pt-1">
                           REPLY
                         </span>{" "}
+
                       </div>
                       <div className="text-gray-500 pt-5 text-sm">
                         Proin gravida nibh vel velit auctor aliquet Aenean
@@ -149,7 +150,7 @@ export default function Home() {
                     </div>
 
                     <div className="col-span-1 pt-12 border-t-2">
-                      <div className="p-20">
+                      <div className="pt-32 pl-20 ">
                         <div className="alexisran rounded-full"></div>
                       </div>
                     </div>
@@ -160,7 +161,7 @@ export default function Home() {
                         <p className="text-gray-500 text-sm pl-4 inline">
                           March 15, 2016{" "}
                         </p>{" "}
-                        <span className="text-gray-500 text-sm float-right">
+                        <span className="text-gray-500 text-sm float-right pt-1">
                           REPLY
                         </span>{" "}
                       </div>
