@@ -8,7 +8,7 @@ function Shrinkgrowtwo(props) {
           <div className="alexisran rounded-full"></div>
         </div>
         <div class="flex-grow w-64 h-16">
-          <p className="font-bold">
+          <p className="font-bold pt-2">
             {props.name3}
             {props.name4}
 
