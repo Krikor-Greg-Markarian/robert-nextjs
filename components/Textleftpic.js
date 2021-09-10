@@ -2,7 +2,7 @@ import React from 'react'
 
 function Textleftpic(props) {
     return (
-        <div>
+        <div className = "pt-20">
             <div className = "container mx-auto">
                 <div>
                     <p>{props.title}</p>
