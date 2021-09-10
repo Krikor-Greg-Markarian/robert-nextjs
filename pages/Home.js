@@ -41,6 +41,7 @@ function Home() {
                 <Howtoask
                   key={idx}
                   button={item.button}
+                  date = {item.date}
                   title={item.title}
                   subtitle={item.subtitle}
                   author={item.author}
