@@ -4,7 +4,7 @@ import Blacknavbar from "./Blacknavbar2";
 import Bluenavbar from "./Bluenavbar";
 import Backgroundimage from "./Backgroundimage";
 import Howtoask from "./Howtoask";
-import { FaFacebook, FaTwitter, Fagoogle, FaGofore } from "react-icons/fa";
+
 
 const object = {
   data: [
