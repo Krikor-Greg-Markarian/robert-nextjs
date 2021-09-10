@@ -16,6 +16,7 @@ import Relatedposts from "../components/Relatedposts";
 import Footer from "../components/Footer";
 import Shrinkgrow from "../components/Shrinkgrow";
 import Shrinkgrowtwo from "../components/Shrinkgrowtwo";
+import Link from 'next/link'
 
 const object = {
   data: [
@@ -152,7 +153,10 @@ export default function Home() {
         <Footer />
       </section>
 
-      <section className="container mx-auto"></section>
+
+      
+
+      
     </div>
   );
 }
