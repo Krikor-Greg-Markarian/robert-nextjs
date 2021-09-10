@@ -15,6 +15,7 @@ import Alexisran from "../components/Alexisran";
 import Alexisran3 from "../components/Alexisran";
 import Relatedposts from "../components/Relatedposts";
 import Alexis from "../components/Alexis";
+import Footer from "../components/Footer";
 
 const object = {
   data: [
@@ -63,7 +64,8 @@ export default function Home() {
         ))}
 
         <div className="container mx-auto border-2 p-4 ">
-          <div>
+          
+          <div className = "">
             <p className="font-bold inline border-r-2 pl-4 pr-4">2 COMMENTS </p>
             <p className="font-bold inline ml-1 pl-4 pr-4 "> TAGGED :</p>
             <span className="text-gray-500 inline">LIFESTYLE, FOOD, DRINK</span>
@@ -125,7 +127,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="pt-20">
+                    <div className="">
                       <div className="font-bold inline">
                         {" "}
                         Alexis Ran{" "}
@@ -179,138 +181,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="">
-        <div className="bg-blue-100 ">
-          <div className="pt-8 pl-20 pr-20">
-            <div className="container mx-auto">
-              <p className="text-gray-600 font-bold">CONTACT</p>
-              <p className="text-2xl text-gray-600 font-bold">
-                Very Much Delighted to Hear From You.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-3 container mx-auto">
-              <div className="col-span-1">
-                <div>
-                  <p className="text-gray-600 font-bold text-2xl pt-6 pb-6">
-                    Let's have some coffee at.
-                  </p>
-                  <div>
-                    <p className="text-gray-500">Address: L-23</p>
-                    <p className="text-gray-500">Nonnae, New City</p>
-                    <p className="text-gray-500">USA</p>
-                  </div>
-                  <div className="pt-4">
-                    <p className="text-gray-600">
-                      Tel: <span className="text-gray-500">+97-786939393</span>{" "}
-                    </p>
-                    <p className="text-gray-600">
-                      Fax: <span className="text-gray-500">-786939393</span>{" "}
-                    </p>
-                    <p className="text-gray-600">
-                      Mail:{" "}
-                      <span className="text-gray-500">
-                        contact@yourwebsite.com
-                      </span>{" "}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 pl-20">
-                <div className="col-span-2">
-                  <div className="pt-8">
-                    <label className="text-gray-500" htmlFor="">
-                      Firstname
-                    </label>
-                    <div></div>
-                    <input
-                      className="p-2 focus:outline-none bg-blue-100"
-                      placeholder="please enter your Firstname"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div className="pt-2">
-                    <label className="text-gray-500" htmlFor="">
-                      Email
-                    </label>
-                    <div></div>
-                    <input
-                      className="p-2 focus:outline-none bg-blue-100"
-                      placeholder="please enter your Email"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div className="pt-2">
-                    <label className="text-gray-500" htmlFor="">
-                      Message
-                    </label>
-                    <div></div>
-                    <input
-                      className="p-2 focus:outline-none bg-blue-100"
-                      placeholder="Message for me"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div className="pt-6 pb-6">
-                    <button className="bg-blue-200 p-3 text-white ">
-                      SEND MESSAGE
-                    </button>
-                  </div>
-                  <p className="text-gray-500 pt-2 pb-2">Required</p>
-                </div>
-              </div>
-              <div className="pt-8 pl-20">
-                <label className="text-gray-500" htmlFor="">
-                  Lastname
-                </label>
-                <div></div>
-                <input
-                  className="p-2 focus:outline-none bg-blue-100"
-                  placeholder="please enter your Lastname"
-                  type="text"
-                  name=""
-                  id=""
-                />
-                <div className="pt-8">
-                  <label className="text-gray-500" htmlFor="">
-                    Phone
-                  </label>
-                  <div></div>
-                  <input
-                    className="p-2 focus:outline-none bg-blue-100"
-                    placeholder="please enter your Phone"
-                    type="text"
-                    name=""
-                    id=""
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="container mx-auto">
-              <div className="grid grid-cols-2">
-                <div>
-                  <p className="text-gray-500">
-                    {" "}
-                    &copy; 2017 Robert Smith All Right Reserved{" "}
-                  </p>
-                </div>
-                <div className="flex justify-end items-center pb-12">
-                  <FaTwitter className="inline" />
-                  <FaFacebook className="inline ml-2" />
-                  <FaLinkedin className="inline ml-2" />
-                  <FaMailBulk className="inline ml-2" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section>
+        <Footer />
       </section>
     </div>
   );
