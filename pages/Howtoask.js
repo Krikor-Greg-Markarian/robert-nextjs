@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaTwitter,Fagoogle,FaGofore } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaGooglePlusG,FaFacebookMessenger  } from 'react-icons/fa'
 
 function Howtoask(props) {
     return (
@@ -12,15 +12,17 @@ function Howtoask(props) {
             <p className = "pt-4 font-bold">{props.title}</p>
             <p className = "text-sm text-gray-500 pt-4 pb-6">{props.subtitle}</p>
            
-            <p className = "text-gray-500 text-sm">{props.author} </p>
-            <div>
-                {/* <FaFacebook />
-                <FaTwitter />
-                <Fagoogle />
-                <FaGofore /> */}
-                
+           <div>
+            <p className = "text-gray-500 text-sm inline">{props.author} 
+            <div className = "inline float-right"><FaFacebook className = "inline"/>
+            <FaTwitter className = "inline ml-3"/>
+            <FaGooglePlusG className = "inline ml-3"/>
+            <p className = "text-sm inline ml-2 font-bold text-gray-400">25</p>
+            <FaFacebookMessenger className = "inline ml-1"/>
+            </div> </p>
             
             </div>
+           
             </div>
         </div>
     )
