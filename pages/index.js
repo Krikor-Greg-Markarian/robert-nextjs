@@ -12,8 +12,9 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Alexisran from "../components/Alexisran";
-import Alexisran2 from "../components/Alexisran";
+import Alexisran3 from "../components/Alexisran";
 import Relatedposts from "../components/Relatedposts";
+import Alexis from "../components/Alexis";
 
 const object = {
   data: [
@@ -25,9 +26,16 @@ const object = {
       position:
         "Many desktop publishing and web page editors now use lorem ipsum as their default model text, andaw search to lorem ipsum will uncover many web sites stilin. Their infancy. Various versions have envolved over.",
 
-      name2: "Alexis Ran",
-      position2:
+      name3: "Alexis Ran",
+      position3:
         "Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin. Lorem quisma bibendum ctor, nisi. elitas consequat ipsum nec sagittis sem nibh id elit. Duis sed odios sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio ticidut.",
+
+      music: "music",
+      something: "Tips for Developing a High-end Mobile App that",
+
+      musictwo: "Policy",
+      somethingtwo:
+        "Developing an application is all about giving a solution for",
     },
   ],
 };
@@ -49,7 +57,7 @@ export default function Home() {
         </Backgroundimage>
       </section>
 
-      <section className="pt-8">
+      <section className="">
         {object.data.map((item, idx) => (
           <Textleftpic key={idx} title={item.title} />
         ))}
@@ -82,25 +90,42 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <p className="font-bold border-b-4 text-sm">RELATED POSTS</p>
             </div>
+
             <div className="grid grid-cols-2 gap-40">
               <div className="col-span-1">
-                <Relatedposts />
+                {object.data.map((item, idx) => (
+                  <Relatedposts
+                    key={idx}
+                    music={item.music}
+                    something={item.something}
+                  />
+                ))}
+                
               </div>
-              <Relatedposts />
+              {object.data.map((item, idx) => (
+                  <Relatedposts
+                    key={idx}
+                    musictwo={item.musictwo}
+                    somethingtwo={item.somethingtwo}
+                  />
+                ))}
             </div>
+
             <div className="flex justify-center items-center pt-20">
               <p className="font-bold border-b-4 text-sm">COMMENTS</p>
             </div>
 
-            <div>
+            <div className="">
               <div className="pt-20 border-b-2  container mx-auto pb-20">
                 <div className="container mx-auto">
                   <div className="grid grid-cols-2 ">
                     <div className="col-span-1">
-                      <div className="alexisran rounded-full"></div>
+                      <div className="p-20 ">
+                        <div className="alexisran rounded-full "></div>
+                      </div>
                     </div>
 
-                    <div className=" ">
+                    <div className="pt-20">
                       <div className="font-bold inline">
                         {" "}
                         Alexis Ran{" "}
@@ -121,10 +146,12 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="col-span-1 pt-12">
-                      <div className="alexisran rounded-full"></div>
+                    <div className="col-span-1 pt-12 border-t-2">
+                      <div className="p-20">
+                        <div className="alexisran rounded-full"></div>
+                      </div>
                     </div>
-                    <div className=" ">
+                    <div className="pt-36 border-t-2">
                       <div className="font-bold inline">
                         {" "}
                         Alexis Ran{" "}
@@ -152,137 +179,137 @@ export default function Home() {
         </div>
       </section>
 
-      <section className = "">
+      <section className="">
         <div className="bg-blue-100 ">
-          <div className = "pt-8 pl-20 pr-20">
-          <div className="container mx-auto">
-            <p className="text-gray-600 font-bold">CONTACT</p>
-            <p className="text-2xl text-gray-600 font-bold">
-              Very Much Delighted to Hear From You.
-            </p>
-          </div>
+          <div className="pt-8 pl-20 pr-20">
+            <div className="container mx-auto">
+              <p className="text-gray-600 font-bold">CONTACT</p>
+              <p className="text-2xl text-gray-600 font-bold">
+                Very Much Delighted to Hear From You.
+              </p>
+            </div>
 
-          <div className="grid grid-cols-3 container mx-auto">
-            <div className="col-span-1">
-              <div>
-                <p className="text-gray-600 font-bold text-2xl pt-6 pb-6">
-                  Let's have some coffee at.
-                </p>
+            <div className="grid grid-cols-3 container mx-auto">
+              <div className="col-span-1">
                 <div>
-                  <p className="text-gray-500">Address: L-23</p>
-                  <p className="text-gray-500">Nonnae, New City</p>
-                  <p className="text-gray-500">USA</p>
-                </div>
-                <div className="pt-4">
-                  <p className="text-gray-600">
-                    Tel: <span className="text-gray-500">+97-786939393</span>{" "}
+                  <p className="text-gray-600 font-bold text-2xl pt-6 pb-6">
+                    Let's have some coffee at.
                   </p>
-                  <p className="text-gray-600">
-                    Fax: <span className="text-gray-500">-786939393</span>{" "}
-                  </p>
-                  <p className="text-gray-600">
-                    Mail:{" "}
-                    <span className="text-gray-500">
-                      contact@yourwebsite.com
-                    </span>{" "}
-                  </p>
+                  <div>
+                    <p className="text-gray-500">Address: L-23</p>
+                    <p className="text-gray-500">Nonnae, New City</p>
+                    <p className="text-gray-500">USA</p>
+                  </div>
+                  <div className="pt-4">
+                    <p className="text-gray-600">
+                      Tel: <span className="text-gray-500">+97-786939393</span>{" "}
+                    </p>
+                    <p className="text-gray-600">
+                      Fax: <span className="text-gray-500">-786939393</span>{" "}
+                    </p>
+                    <p className="text-gray-600">
+                      Mail:{" "}
+                      <span className="text-gray-500">
+                        contact@yourwebsite.com
+                      </span>{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-2 pl-20">
-              <div className="col-span-2">
-                <div className="pt-8">
-                  <label className="text-gray-500" htmlFor="">
-                    Firstname
-                  </label>
-                  <div></div>
-                  <input
-                    className="p-2 focus:outline-none bg-blue-100"
-                    placeholder="please enter your Firstname"
-                    type="text"
-                    name=""
-                    id=""
-                  />
+              <div className="grid grid-cols-2 pl-20">
+                <div className="col-span-2">
+                  <div className="pt-8">
+                    <label className="text-gray-500" htmlFor="">
+                      Firstname
+                    </label>
+                    <div></div>
+                    <input
+                      className="p-2 focus:outline-none bg-blue-100"
+                      placeholder="please enter your Firstname"
+                      type="text"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div className="pt-2">
+                    <label className="text-gray-500" htmlFor="">
+                      Email
+                    </label>
+                    <div></div>
+                    <input
+                      className="p-2 focus:outline-none bg-blue-100"
+                      placeholder="please enter your Email"
+                      type="text"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div className="pt-2">
+                    <label className="text-gray-500" htmlFor="">
+                      Message
+                    </label>
+                    <div></div>
+                    <input
+                      className="p-2 focus:outline-none bg-blue-100"
+                      placeholder="Message for me"
+                      type="text"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div className="pt-6 pb-6">
+                    <button className="bg-blue-200 p-3 text-white ">
+                      SEND MESSAGE
+                    </button>
+                  </div>
+                  <p className="text-gray-500 pt-2 pb-2">Required</p>
                 </div>
-                <div className="pt-2">
-                  <label className="text-gray-500" htmlFor="">
-                    Email
-                  </label>
-                  <div></div>
-                  <input
-                    className="p-2 focus:outline-none bg-blue-100"
-                    placeholder="please enter your Email"
-                    type="text"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div className="pt-2">
-                  <label className="text-gray-500" htmlFor="">
-                    Message
-                  </label>
-                  <div></div>
-                  <input
-                    className="p-2 focus:outline-none bg-blue-100"
-                    placeholder="Message for me"
-                    type="text"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div className="pt-6 pb-6">
-                  <button className="bg-blue-200 p-3 text-white ">
-                    SEND MESSAGE
-                  </button>
-                </div>
-                <p className="text-gray-500 pt-2 pb-2">Required</p>
               </div>
-            </div>
-            <div className="pt-8 pl-20">
-              <label className="text-gray-500" htmlFor="">
-                Lastname
-              </label>
-              <div></div>
-              <input
-                className="p-2 focus:outline-none bg-blue-100"
-                placeholder="please enter your Lastname"
-                type="text"
-                name=""
-                id=""
-              />
-              <div className="pt-8">
+              <div className="pt-8 pl-20">
                 <label className="text-gray-500" htmlFor="">
-                  Phone
+                  Lastname
                 </label>
                 <div></div>
                 <input
                   className="p-2 focus:outline-none bg-blue-100"
-                  placeholder="please enter your Phone"
+                  placeholder="please enter your Lastname"
                   type="text"
                   name=""
                   id=""
                 />
+                <div className="pt-8">
+                  <label className="text-gray-500" htmlFor="">
+                    Phone
+                  </label>
+                  <div></div>
+                  <input
+                    className="p-2 focus:outline-none bg-blue-100"
+                    placeholder="please enter your Phone"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="container mx-auto">
-            <div className="grid grid-cols-2">
-              <div>
-                <p className="text-gray-500">
-                  {" "}
-                  &copy; 2017 Robert Smith All Right Reserved{" "}
-                </p>
-              </div>
-              <div className="flex justify-end items-center pb-12">
-                <FaTwitter className="inline" />
-                <FaFacebook className="inline ml-2" />
-                <FaLinkedin className="inline ml-2" />
-                <FaMailBulk className="inline ml-2" />
+            <div className="container mx-auto">
+              <div className="grid grid-cols-2">
+                <div>
+                  <p className="text-gray-500">
+                    {" "}
+                    &copy; 2017 Robert Smith All Right Reserved{" "}
+                  </p>
+                </div>
+                <div className="flex justify-end items-center pb-12">
+                  <FaTwitter className="inline" />
+                  <FaFacebook className="inline ml-2" />
+                  <FaLinkedin className="inline ml-2" />
+                  <FaMailBulk className="inline ml-2" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
     </div>
