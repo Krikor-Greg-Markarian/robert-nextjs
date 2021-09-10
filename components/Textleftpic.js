@@ -14,7 +14,7 @@ function Textleftpic(props) {
                         </div>
                         <div>
                         <div className = "text-gray-500 ">{props.title}</div>
-                        <div className = "pt-6 pb-20 text-gray-500">{props.title}</div>
+                        <div className = "pt-6 pb-40 text-gray-500">{props.title}</div>
                         </div>
                         
                         
