@@ -10,7 +10,6 @@ import {
   FaTwitter,
   FaMailBulk,
   FaMapMarker,
-  FaLinkedin,
 } from "react-icons/fa";
 import Relatedposts from "../components/Relatedposts";
 import Footer from "../components/Footer";
