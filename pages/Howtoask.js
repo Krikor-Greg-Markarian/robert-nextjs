@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaGooglePlusG,FaFacebookMessenger  } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaGooglePlusG,FaFacebookMessenger,  } from 'react-icons/fa'
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Howtoask(props) {
     return (
@@ -8,9 +9,9 @@ function Howtoask(props) {
                 <button className = "bg-blue-500 p-2 text-white rounded-lg">{props.button}</button>
             </div>
             <div className = "p-6">
-            <p>{props.date}</p>
+            <p className = "text-gray-500 text-sm font-bold">{props.date}</p>
             <p className = "pt-4 font-bold">{props.title}</p>
-            <p className = "text-sm text-gray-500 pt-4 pb-6">{props.subtitle}</p>
+            <p className = "text-sm text-gray-500 pt-4 pb-6">{props.subtitle} <IoIosArrowRoundForward className = "inline ml-12 text-2xl"/></p>
            
            <div>
             <p className = "text-gray-500 text-sm inline">{props.author} 
