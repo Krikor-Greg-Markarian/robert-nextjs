@@ -3,7 +3,7 @@ import Bluenavbar from "../components/Bluenavbar";
 import Backgroundimage from "../components/Backgroundimage";
 import Smallbox from "../components/Smallbox";
 import Textleftpic from "../components/Textleftpic";
-import styles from "../styles/Home.module.css"
+
 import {
   FaFacebook,
   FaInstagram,
@@ -15,7 +15,6 @@ import Relatedposts from "../components/Relatedposts";
 import Footer from "../components/Footer";
 import Shrinkgrow from "../components/Shrinkgrow";
 import Shrinkgrowtwo from "../components/Shrinkgrowtwo";
-import Link from 'next/link'
 
 const object = {
   data: [
