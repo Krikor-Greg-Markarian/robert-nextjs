@@ -108,12 +108,22 @@ input[type=text] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.instapics2 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 70px;
   height: 70px;
 }
 
 
-/* sdasd */
+
+
 
 
 
