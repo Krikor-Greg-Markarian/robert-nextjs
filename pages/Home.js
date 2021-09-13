@@ -4,6 +4,7 @@ import Bluenavbar from "./Bluenavbar";
 import Backgroundimage from "./Backgroundimage";
 import Howtoask from "./Howtoask";
 import { FaFacebook, FaInstagram, FaTwitter, FaHeart } from "react-icons/fa";
+import Footer from "./Footer";
 
 const object = {
   data: [
@@ -40,50 +41,59 @@ function Home() {
         <div className="col-span-1 container mx-auto pt-20 w-8/12 grid grid-cols-2">
           <div className="grid grid-cols-1">
             <div className="col-span-1">
-              {object.data.map((item, idx) => (
-                <Howtoask
-                  key={idx}
-                  button={item.button}
-                  date={item.date}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  author={item.author}
-                />
-              ))}
-              {object.data.map((item, idx) => (
-                <Howtoask
-                  key={idx}
-                  button={item.button}
-                  date={item.date}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  author={item.author}
-                />
-              ))}
-              {object.data.map((item, idx) => (
-                <Howtoask
-                  key={idx}
-                  button={item.button}
-                  date={item.date}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  author={item.author}
-                />
-              ))}
-              {object.data.map((item, idx) => (
-                <Howtoask
-                  key={idx}
-                  button={item.button}
-                  date={item.date}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  author={item.author}
-                />
-              ))}
+              <div className="pb-12">
+                {object.data.map((item, idx) => (
+                  <Howtoask
+                    key={idx}
+                    button={item.button}
+                    date={item.date}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                    author={item.author}
+                  />
+                ))}
+              </div>
+              <div className="pb-12">
+                {object.data.map((item, idx) => (
+                  <Howtoask
+                    key={idx}
+                    button={item.button}
+                    date={item.date}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                    author={item.author}
+                  />
+                ))}
+              </div>
+              <div className="pb-12">
+                {object.data.map((item, idx) => (
+                  <Howtoask
+                    key={idx}
+                    button={item.button}
+                    date={item.date}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                    author={item.author}
+                  />
+                ))}
+              </div>
+              <div className="pb-12">
+                {object.data.map((item, idx) => (
+                  <Howtoask
+                    key={idx}
+                    button={item.button}
+                    date={item.date}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                    author={item.author}
+                  />
+                ))}
+              </div>
             </div>
           </div>
-          <div className="pl-24 w-80">
-            <div className="container mx-auto bg-white p-3">
+          <div className="pl-24 ">
+            <div className = "w-80">
+            <div className="container mx-auto bg-white p-2">
               <div className="flex justify-center items-center">
                 <p className="text-gray-500">
                   ----{" "}
@@ -102,8 +112,9 @@ function Home() {
                 Robert Smith
               </p>
             </div>
+            </div>
 
-            <div className="pt-4 w-80">
+            <div className="pt-12 w-80 ">
               <div className="container mx-auto bg-white p-3">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500">
@@ -116,22 +127,22 @@ function Home() {
                 </div>
                 <div className="flex justify-center items-center pt-4">
                   <input
-                    type="text"
+                    type="text2"
                     name=""
                     id=""
                     placeholder="Your Email Adress"
-                    className="p-2 border-2"
+                    className="p-2 border-2 focus:outline-none"
                   />
                 </div>
 
                 <div className="pt-4"></div>
                 <div className="flex justify-center items-center">
-                  <button className="bg-gray-200 font-bold text-sm px-14 py-2">
+                  <button className="bg-gray-200 font-bold text-sm px-16 py-2">
                     SUBSCRIBE
                   </button>
                 </div>
               </div>
-              <div className="pt-4 w-80">
+              <div className="pt-12 w-80">
                 <div className="container mx-auto bg-white p-3">
                   <div className="flex justify-center items-center">
                     <p className="text-gray-500">
@@ -142,14 +153,43 @@ function Home() {
                       ----
                     </p>
                   </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="instapics"></div>
-                    <div className="instapics"></div>
-                    <div className="instapics"></div>
-                    <div className="instapics"></div>
+
+
+                  <div className = "flex justify-center items-center">
+                  <div className="grid grid-cols-2 gap-2 pt-6">
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+                    <div className="col-span-1">
+                      <div className="instapics"></div>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div className = "flex justify-center items-center">
+                     <p className = "text-blue-400 pt-4 pb-8">@theocean</p>
                   </div>
                 </div>
-                <div className="pt-4 w-80">
+
+
+
+
+                <div className="pt-12 w-80">
                   <div className="container mx-auto bg-white p-3">
                     <div className="flex justify-center items-center">
                       <p className="text--500">
@@ -174,7 +214,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="pt-4 ">
+            <div className="pt-12 ">
               <div className="container mx-auto bg-white p-8 pt-4 w-80 h-auto">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500">
@@ -187,9 +227,9 @@ function Home() {
                 </div>
 
                 <div className="">
-                  <div class="flex pt-4">
+                  <div class="flex pt-12">
                     <div class="flex-shrink w-28 h-16">
-                      <div className="instapics"></div>
+                      <div className="instapics2"></div>
                     </div>
                     <div class="flex-shrink w-64 h-16">
                       <p className="text-sm">
@@ -202,7 +242,7 @@ function Home() {
                 <div className="">
                   <div class="flex pt-4">
                     <div class="flex-shrink w-28 h-16">
-                      <div className="instapics"></div>
+                      <div className="instapics2"></div>
                     </div>
                     <div class="flex-shrink w-64 h-16">
                       <p className="text-sm">
@@ -215,7 +255,7 @@ function Home() {
                 <div className="">
                   <div class="flex pt-4">
                     <div class="flex-shrink w-28 h-16">
-                      <div className="instapics"></div>
+                      <div className="instapics2"></div>
                     </div>
                     <div class="flex-shrink w-64 h-16">
                       <p className="text-sm">
@@ -228,7 +268,7 @@ function Home() {
                 <div className="">
                   <div class="flex pt-4">
                     <div class="flex-shrink w-28 h-16">
-                      <div className="instapics"></div>
+                      <div className="instapics2"></div>
                     </div>
                     <div class="flex-shrink w-64 h-16">
                       <p className="text-sm">
@@ -241,7 +281,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="pt-4 w-80 h-auto">
+            <div className="pt-12 w-80 h-auto">
               <div className="container mx-auto bg-white p-3">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500 pt-4 pb-4">
@@ -267,9 +307,8 @@ function Home() {
                   </div>
                 </div>
               </div>
-              
             </div>
-            <div className="pt-4 w-80 h-auto">
+            <div className="pt-12 w-80 h-auto">
               <div className="container mx-auto bg-white p-3">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500 pt-4 pb-4">
@@ -279,27 +318,31 @@ function Home() {
                     </span>{" "}
                     ----
                   </p>
-                 
                 </div>
-                <div className = "flex justify-center items-center">
-                <FaTwitter className = "text-blue-600"/>
+                <div className="flex justify-center items-center">
+                  <FaTwitter className="text-blue-600" />
                 </div>
-                
-                <p className = "text-gray-500 text-sm text-center pt-4 pb-4">TWEETED ON 07:05 AM JUL 30</p>
-                <p className = "text-center text-sm pt-4">Last night @ #CFDAAwards. it was an honor to present the @swarovski emerging talent awards. What a talent-</p>
-                <div className = "flex justify-center items-center pt-4 pb-4">
-                <p className = "inline text-blue-400">Reply</p>
-                <p className = "inline text-blue-400 ml-2">Retweet</p>
-                <p className = "inline text-blue-400 ml-2">Favorite</p>
+
+                <p className="text-gray-500 text-sm text-center pt-4 pb-4">
+                  TWEETED ON 07:05 AM JUL 30
+                </p>
+                <p className="text-center text-sm pt-4">
+                  Last night @ #CFDAAwards. it was an honor to present the
+                  @swarovski emerging talent awards. What a talent-
+                </p>
+                <div className="flex justify-center items-center pt-4 pb-4">
+                  <p className="inline text-blue-400">Reply</p>
+                  <p className="inline text-blue-400 ml-2">Retweet</p>
+                  <p className="inline text-blue-400 ml-2">Favorite</p>
                 </div>
-               
-                
               </div>
-              
             </div>
           </div>
-          
         </div>
+
+        <section>
+          <Footer />
+        </section>
       </section>
     </div>
   );
