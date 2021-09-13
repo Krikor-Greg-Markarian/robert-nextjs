@@ -3,8 +3,9 @@ import Blacknavbar from "./Blacknavbar2";
 import Bluenavbar from "./Bluenavbar";
 import Backgroundimage from "./Backgroundimage";
 import Howtoask from "./Howtoask";
-import { FaFacebook, FaInstagram, FaTwitter, FaHeart } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaHeart, FaIoxhost } from "react-icons/fa";
 import Footer from "./Footer";
+import Smallboximgtext from "./Smallboximgtext";
 
 const object = {
   data: [
@@ -18,6 +19,19 @@ const object = {
       button2: "TRAVEL",
       button3: "BUSSINESS",
       button4: "TECHNOLOGY",
+      text :"Best Beaches in Sydney For The Easter Long Weekedn",
+      fashion: "FASHION",
+      text2:"Your New Favorite Accessory Might Be From Ukrain",
+      fashion2: "LIFESTYLE",
+      text3:"London Coolest Cofeeshop Now Are in Downtown",
+      fashion3: "TRAVEL",
+      text4:"London Coolest Cofeeshop Now Are in Downtown",
+      fashion4: "TRAVEL",
+      hikingimage3: "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
+      hikingimage4: "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
+      hikingimage5: "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
+      hikingimage6: "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg"
+      
     },
   ],
 };
@@ -50,6 +64,7 @@ function Home() {
                     title={item.title}
                     subtitle={item.subtitle}
                     author={item.author}
+                    hikingimage3 = {item.hikingimage3}
                   />
                 ))}
               </div>
@@ -62,6 +77,7 @@ function Home() {
                     title={item.title}
                     subtitle={item.subtitle}
                     author={item.author}
+                    hikingimage4 = {item.hikingimage4}
                   />
                 ))}
               </div>
@@ -74,6 +90,7 @@ function Home() {
                     title={item.title}
                     subtitle={item.subtitle}
                     author={item.author}
+                    hikingimage5 = {item.hikingimage5}
                   />
                 ))}
               </div>
@@ -86,6 +103,7 @@ function Home() {
                     title={item.title}
                     subtitle={item.subtitle}
                     author={item.author}
+                    hikingimage6 = {item.hikingimage6}
                   />
                 ))}
               </div>
@@ -204,7 +222,7 @@ function Home() {
                       <div>
                         <FaFacebook className="inline" />
                         <FaTwitter className="inline ml-2" />
-                        <FaHeart className="inline ml-2" />
+                        <FaIoxhost className="inline ml-2" />
                         <FaInstagram className="inline ml-2" />
                         <FaHeart className="inline ml-2" />
                       </div>
@@ -214,7 +232,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="pt-12 ">
+            <div className="pt-12">
               <div className="container mx-auto bg-white p-8 pt-4 w-80 h-auto">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500">
@@ -226,58 +244,36 @@ function Home() {
                   </p>
                 </div>
 
-                <div className="">
-                  <div class="flex pt-12">
-                    <div class="flex-shrink w-28 h-16">
-                      <div className="instapics2"></div>
-                    </div>
-                    <div class="flex-shrink w-64 h-16">
-                      <p className="text-sm">
-                        Best Beaches in Sydney For The Easter Long Weekend
-                      </p>
-                      <p className="text-gray-500 text-sm pt-2">FASHION</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="">
-                  <div class="flex pt-4">
-                    <div class="flex-shrink w-28 h-16">
-                      <div className="instapics2"></div>
-                    </div>
-                    <div class="flex-shrink w-64 h-16">
-                      <p className="text-sm">
-                        Best Beaches in Sydney For The Easter Long Weekend
-                      </p>
-                      <p className="text-gray-500 text-sm pt-2">FASHION</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="">
-                  <div class="flex pt-4">
-                    <div class="flex-shrink w-28 h-16">
-                      <div className="instapics2"></div>
-                    </div>
-                    <div class="flex-shrink w-64 h-16">
-                      <p className="text-sm">
-                        Best Beaches in Sydney For The Easter Long Weekend
-                      </p>
-                      <p className="text-gray-500 text-sm pt-2">FASHION</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="">
-                  <div class="flex pt-4">
-                    <div class="flex-shrink w-28 h-16">
-                      <div className="instapics2"></div>
-                    </div>
-                    <div class="flex-shrink w-64 h-16">
-                      <p className="text-sm">
-                        Best Beaches in Sydney For The Easter Long Weekend
-                      </p>
-                      <p className="text-gray-500 text-sm pt-2">FASHION</p>
-                    </div>
-                  </div>
-                </div>
+                {object.data.map((item, idx) => (
+                  <Smallboximgtext
+                    key={idx}
+                   text = {item.text}
+                   fashion = {item.fashion}
+                  />
+                ))}
+                {object.data.map((item, idx) => (
+                  <Smallboximgtext
+                    key={idx}
+                   text2 = {item.text2}
+                   fashion2 = {item.fashion2}
+                  />
+                ))}
+                {object.data.map((item, idx) => (
+                  <Smallboximgtext
+                    key={idx}
+                   text3 = {item.text3}
+                   fashion3 = {item.fashion3}
+                  />
+                ))}
+                {object.data.map((item, idx) => (
+                  <Smallboximgtext
+                    key={idx}
+                   text4 = {item.text4}
+                   fashion4 = {item.fashion4}
+                  />
+                ))}
+                
+               
               </div>
             </div>
 
@@ -308,7 +304,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="pt-12 w-80 h-auto">
+            <div className="pt-12 w-80 h-auto pb-20">
               <div className="container mx-auto bg-white p-3">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500 pt-4 pb-4">
