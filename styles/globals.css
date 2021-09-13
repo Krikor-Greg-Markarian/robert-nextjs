@@ -38,6 +38,16 @@ body{
   height: 200px;
 }
 
+.hikingimage4{
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/31/11/24/tap-791172__340.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+
 
 
 
