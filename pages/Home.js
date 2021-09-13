@@ -171,7 +171,7 @@ function Home(props) {
               </div>
             </div>
 
-            <div className="pt-12">
+            <div className="pt-12 pr-56">
               <div className="container mx-auto bg-white p-8 pt-4 w-80 h-auto">
                 <div className="flex justify-center items-center">
                   <p className="text-gray-500">
