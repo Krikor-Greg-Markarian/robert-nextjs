@@ -4,13 +4,13 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Howtoask(props) {
     return (
-        <div className = " pt-2 bg-white">
+        <div className = "bg-white">
             <div className = "hikingimage3 rounded-t-lg p-6">
-                <button className = "bg-blue-500 p-2 text-white rounded-lg">{props.button}</button>
+                <button className = "bg-blue-500 p-2 text-white rounded-lg">{props.button}{props.button2}{props.button3}{props.button4}</button>
             </div>
             <div className = "p-6">
             <p className = "text-gray-500 text-sm font-bold">{props.date}</p>
-            <p className = "pt-4 font-bold">{props.title}</p>
+            <p className = "pt-1 font-bold">{props.title}</p>
             <p className = "text-sm text-gray-500 pt-4 pb-6">{props.subtitle} <IoIosArrowRoundForward className = "inline ml-12 text-2xl"/></p>
            
            <div>
