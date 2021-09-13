@@ -13,7 +13,7 @@ function Howtoask(props) {
     return (
 
         
-        <div className = "bg-white">
+        <div className = "bg-white mb-8">
 
             <div style = {{backgroundImage: `url("${imgUrl1}")`}}  
 
