@@ -46,6 +46,9 @@ function Home(props) {
                     subtitle={item.subtitle}
                     author={item.author}
                     hikingimage3={item.hikingimage3}
+                    hikingimage4={item.hikingimage4}
+                    hikingimage5={item.hikingimage5}
+                    hikingimage6={item.hikingimage6}
                   />
                 ))}
               </div>
@@ -255,6 +258,7 @@ function Home(props) {
         <section>
           <Footer />
         </section>
+
       </section>
     </div>
   );
@@ -269,5 +273,7 @@ export async function getServerSideProps(context) {
     }, // will be passed to the page component as props
   };
 }
+
+
 
 export default Home;
