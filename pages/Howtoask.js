@@ -3,10 +3,10 @@ import { FaFacebook, FaTwitter, FaGooglePlusG,FaFacebookMessenger,  } from 'reac
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Howtoask(props) {
-    const imgUrl1 = props.hikingimage3;
-    const imgUrl2 = props.hikingimage4;
-    const imgUrl3 = props.hikingimage5;
-    const imgUrl4 = props.hikingimage6;
+    const hikingimage3 = props.hikingimage3;
+    const hikingimage4 = props.hikingimage4;
+    const hikingimage5 = props.hikingimage5;
+    const hikingimage6 = props.hikingimage6;
     
     
     
@@ -15,7 +15,8 @@ function Howtoask(props) {
         
         <div className = "bg-white mb-8">
 
-            <div style = {{backgroundImage: `url("${imgUrl1}")`}}  
+            <div style = {{backgroundImage: `url("${hikingimage3}")`}}  
+            
 
             className = "hikingimage3 rounded-t-lg p-6">
                 <button className = "bg-blue-500 p-2 text-white rounded-lg">{props.button}{props.button2}{props.button3}{props.button4}</button>
@@ -37,7 +38,14 @@ function Howtoask(props) {
             </div>
            
             </div>
+            
         </div>
+
+
+
+
+
+
     )
 }
 
