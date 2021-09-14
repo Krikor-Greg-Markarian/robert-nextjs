@@ -10,7 +10,6 @@ export default function handler(req, res) {
         subtitle:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit libero maiores, itaque atque in sunt eaque consequatur nesciunt dolores hic, ratione excepturi reprehenderit tempora. Saepe nobis debitis incidunt? Maiores!",
         author: "Post by Author",
-
         text: "Best Beaches in Sydney For The Easter Long Weekedn",
         fashion: "FASHION",
         text2: "Your New Favorite Accessory Might Be From Ukrain",
@@ -35,7 +34,6 @@ export default function handler(req, res) {
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit libero maiores, itaque atque in sunt eaque consequatur nesciunt dolores hic, ratione excepturi reprehenderit tempora. Saepe nobis debitis incidunt? Maiores!",
         author: "Post by Author",
         button2: "TRAVEL",
-
         text: "Best Beaches in Sydney For The Easter Long Weekedn",
         fashion: "FASHION",
         text2: "Your New Favorite Accessory Might Be From Ukrain",
@@ -59,7 +57,6 @@ export default function handler(req, res) {
         subtitle:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit libero maiores, itaque atque in sunt eaque consequatur nesciunt dolores hic, ratione excepturi reprehenderit tempora. Saepe nobis debitis incidunt? Maiores!",
         author: "Post by Author",
-
         button3: "BUSINESS",
         text: "Best Beaches in Sydney For The Easter Long Weekedn",
         fashion: "FASHION",
