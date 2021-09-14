@@ -29,8 +29,9 @@ function Home(props) {
         <Backgroundimage />
       </section>
 
+
       <section>
-        <div className="col-span-1 container mx-auto pt-20 w-8/12 grid grid-cols-2">
+        <div className="container mx-auto pt-20 w-8/12 grid grid-cols-2">
           <div className="grid grid-cols-1 pb-2">
             <div className="col-span-1">
               <div className="pb-12">
@@ -45,10 +46,10 @@ function Home(props) {
                     title={item.title}
                     subtitle={item.subtitle}
                     author={item.author}
-                    hikingimage3={item.hikingimage3}
-                    hikingimage4={item.hikingimage4}
-                    hikingimage5={item.hikingimage5}
-                    hikingimage6={item.hikingimage6}
+                    // hikingimage3={item.hikingimage3}
+                    // hikingimage4={item.hikingimage4}
+                    // hikingimage5={item.hikingimage5}
+                    // hikingimage6={item.hikingimage6}
                   />
                 ))}
               </div>
@@ -258,7 +259,6 @@ function Home(props) {
         <section>
           <Footer />
         </section>
-
       </section>
     </div>
   );
@@ -270,10 +270,9 @@ export async function getServerSideProps(context) {
   return {
     props: {
       posts_data: response.data,
+      
     }, // will be passed to the page component as props
   };
 }
-
-
 
 export default Home;
