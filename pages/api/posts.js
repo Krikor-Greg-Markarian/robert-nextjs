@@ -18,14 +18,9 @@ export default function handler(req, res) {
         fashion3: "TRAVEL",
         text4: "London Coolest Cofeeshop Now Are in Downtown",
         fashion4: "TRAVEL",
-        hikingimage3:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
-        hikingimage4:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
-        hikingimage5:
-          "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
-        hikingimage6:
-          "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg",
+        // hikingimage3:
+        //   "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
+       
       },
       {
         date: "07 JUNE 2016",
@@ -42,14 +37,9 @@ export default function handler(req, res) {
         fashion3: "TRAVEL",
         text4: "London Coolest Cofeeshop Now Are in Downtown",
         fashion4: "TRAVEL",
-        hikingimage3:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
-        hikingimage4:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
-        hikingimage5:
-          "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
-        hikingimage6:
-          "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg",
+        // hikingimage4:
+        //   "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
+        
       },
       {
         date: "07 JUNE 2016",
@@ -66,14 +56,9 @@ export default function handler(req, res) {
         fashion3: "TRAVEL",
         text4: "London Coolest Cofeeshop Now Are in Downtown",
         fashion4: "TRAVEL",
-        hikingimage3:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
-        hikingimage4:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
-        hikingimage5:
-          "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
-        hikingimage6:
-          "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg",
+        // hikingimage5:
+        //   "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
+        
       },
       {
         date: "07 JUNE 2016",
@@ -90,14 +75,8 @@ export default function handler(req, res) {
         fashion3: "TRAVEL",
         text4: "London Coolest Cofeeshop Now Are in Downtown",
         fashion4: "TRAVEL",
-        hikingimage3:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/31/walking-1149747__340.jpg",
-        hikingimage4:
-          "https://cdn.pixabay.com/photo/2016/01/19/17/47/hiker-1149898__340.jpg",
-        hikingimage5:
-          "https://cdn.pixabay.com/photo/2015/04/20/17/39/man-731900__340.jpg",
-        hikingimage6:
-          "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg",
+        // hikingimage6:
+        //   "https://cdn.pixabay.com/photo/2015/09/02/12/51/girl-918706__340.jpg",
       },
     ],
   };
